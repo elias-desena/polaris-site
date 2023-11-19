@@ -46,7 +46,7 @@ main {
 }
 
 #hero-section {
-    background: url('background.png') no-repeat; /* Set the background image */
+    background: url('background.jpg') no-repeat; /* Set the background image */
     background-size: cover;
     height: 720px; /* Adjust the height as needed */
     display: flex;
