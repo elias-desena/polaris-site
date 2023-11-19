@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <title>Polaris Records</title>
+</head>
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the height of the fixed navbar
+            var navbarHeight = 76;
+
+            // Get all links with the hash (#)
+            var links = document.querySelectorAll('a[href^="#"]');
+
+            // Add smooth scrolling behavior to all links with the hash (#)
+            links.forEach(function (link) {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault();
+
+                    var targetId = this.getAttribute('href').substring(1);
+                    var targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        var offsetTop = targetElement.offsetTop - navbarHeight;
+
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+    <nav>
+        <div class="logo">
+            <!-- Placeholder for logo -->
+            <a href="#hero-section"><img src="polaris-logo.svg" alt="Polaris Records Logo"></a>
+        </div>
+        <div class="nav-links">
+            <a href="#hero-section">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#artists">Artists</a>
+            <a href="#howitworks">How It Works</a>
+            <a href="#demos">Demos</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero-section">
+            <img src="hero-text.png" alt="Hero Text">
+            <a class="home-button" href="#howitworks">
+                <div>
+                    <span>LET'S GET STARTED</span>
+                </div>
+            </a>
+        </section>
+        <section id="about">
+            <span class="section-title">ABOUT US</span>
+            <div class="rich-text-section">
+                <h1>The Music Industry is Changing</h1>
+                <h2>But we're here to stay</h2>
+                <p>In the fast-changing music scene, Polaris Records is standing strong. We appreciate new vibes, but we also value classic tunes. More than just a label, we're a crew that backs artists making exciting music. As the music world transforms, Polaris Records is here, cheering on the rising stars who bring new energy and keep the music scene authentic.</p>
+                <p>Whether it's Brazilian Funk, House or even Drum and Bass, we've got you covered. We work with all sorts of different artists and every Genre is welcome at Polaris Records. We're here to rocket-launch your music career right into the skies, so don't be afraid to send in your <a href="#demos">demos</a></p>
+            </div>
+        </section>
+        <section id="artists">
+            <h1>Artists we've worked with:</h1>
+            <div class="portfolio-container">
+                <a href="https://open.spotify.com/artist/3qycxIGAHj1KyoAQ6PGCO6" class="portfolio-item">
+                    <img src="assets/seek.png" alt="Album Artwork" class="portfolio-image">
+                    <div class="portfolio-item-overlay">
+                        <div class="overlay-text">
+                            <h3>Seek</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://open.spotify.com/artist/3eTy7yvRHnpPKY4hNCfYYX" class="portfolio-item">
+                    <img src="assets/sxid.png" alt="Album Artwork" class="portfolio-image">
+                    <div class="portfolio-item-overlay">
+                        <div class="overlay-text">
+                            <h3>SXID</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://open.spotify.com/artist/6DlWUEM6Qr9z6p6YAOLBDh" class="portfolio-item">
+                    <img src="assets/dj-flg.png" alt="Album Artwork" class="portfolio-image">
+                    <div class="portfolio-item-overlay">
+                        <div class="overlay-text">
+                            <h3>DJ FLG</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section id="howitworks">
+            <h1>How it Works</h1>
+            <ol>
+                <li><strong>Demo Submitted 🎤:</strong> Begin your adventure by submitting your <a href="#demos">demo</a> to Polaris Records. We
+                    welcome diverse sounds and styles, so let your unique voice shine.</li>
+    
+                <li><strong>A&R Review 🕵️‍♂️:</strong> Our A&R team, with an eagle eye for talent, meticulously reviews each
+                    submission. We're on the lookout for the next star to join our constellation.</li>
+    
+                <li><strong>You'll Get a Response ✉️:</strong> Swiftly, you'll receive a response from us. Whether it's a nod
+                    of approval or constructive feedback, we value every artist's effort and provide insights to fuel growth.
+                </li>
+    
+                <li><strong>Agreement Signed 📝:</strong> Once the stars align, and both parties are in sync, we'll guide you
+                    through the agreement process. Our transparent and artist-friendly contracts ensure a harmonious
+                    collaboration.</li>
+    
+                <li><strong>Song Released 🚀:</strong> The moment you've been waiting for! Your music takes flight into the
+                    world under the Polaris Records banner. From here, your journey as a Polaris artist truly begins, and
+                    we're here to support you every step of the way, and promote growth by promoting your music through our connections
+                    and playlists.</li>
+            </ol>
+        </section>
+        <section id="demos">
+            <h1>Demo Submission Guidelines</h2>
+
+            <p><strong>Submission Criteria:</strong></p>
+            <ol>
+                <li><strong>Audio Format:</strong> Please submit your demo in WAV format, ensuring a high-quality sound experience. We require 24-bit integer audio files to capture the richness and depth of your music.</li>
+        
+                <li><strong>Finished Songs Only:</strong> Send us your best work! We're seeking completed, polished tracks that showcase your full artistic vision. No works in progress, please. Let your finished composition speak volumes about your unique sound.</li>
+        
+                <li><strong>Original Compositions:</strong> We thrive on originality. While we appreciate the art of remixing, for demo submissions, we're focused on your original compositions. Share the music that represents the true essence of your creativity.</li>
+            </ol>
+        
+            <p><strong>Submission Process:</strong></p>
+            <ol>
+                <li><strong>Prepare Your Demo:</strong> Ensure your song is in WAV format, 24-bit integer, and is a finished, standalone piece.</li>
+        
+                <li><strong>Attach it to the Email:</strong> Include your WAV file, along with any additional information you'd like us to know, such as a brief artist bio or the inspiration behind the track. Attach all of it to the Email or if its file size exceeds the limit, upload it to Google Drive or similar file hosting platforms and send us the link. Make sure we have access to the files.</li>
+        
+                <li><strong>Submit Your Demo:</strong> Send your ZIP folder to <a href="mailto:demo@polarisrecords.com">demo@polarisrecords.com</a> with the subject line "Demo Submission: [Your Artist Name]." Feel free to include links to your social media profiles or website if you wish.</li>
+        
+                <li><strong>Await Our Response:</strong> Our A&R team will carefully review each submission. We appreciate your patience as we curate our constellation of artists. If your demo resonates with us, you'll receive a response within a reasonable timeframe.</li>
+            </ol>
+        
+            <p>At Polaris Records, we believe in the power of diverse voices and genres. Let your music be the guiding star on this journey. We can't wait to listen to your cosmic creations! 🌌🎶</p>
+            <div class="button-holder">
+                <a class="demo-button" href="mailto:demo@polarisrecords.com">
+                    <div>
+                        <span>SUBMIT YOUR DEMO HERE</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        </section>
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <p>For licensing, tour, general, and contract inquiries, please refer to <a href="mailto:contact@polarisrecords.com">contact@polarisrecords.com</a>.</p>
+            <p>For demos, please check out our <a href="#demos">Demo Submission Guidelines</a>.</p>
+        </section>
+    </main>
+</body>
+</html>
